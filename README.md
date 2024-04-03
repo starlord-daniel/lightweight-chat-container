@@ -1,8 +1,8 @@
 # Lightweight Chat Container
 
-This repo contains a simple chat container that can be used to chat with other with an OpenAI LLM.
+This repo contains a simple chat container that can be used to chat with an assistant using an OpenAI LLM.
 
-The intention is to be as simple and lightweight as possible.
+The intention is to be as simple and lightweight as possible and provide a starting point for further development.
 
 You can interact with the assistant by typing messages in the terminal.
 
