@@ -3,11 +3,18 @@ from lib import generate_answer
 
 def main():
 
-    text = "What is the capital of France?"
+    chat_history = []
 
-    answer = generate_answer(text)
+    for i in range(3):
 
-    print(f"Answer: {answer}")
+        # ask the user for a question to the assistant
+        text = input("Question: ")
+        chat_history.append(("user", text))
+
+        answer = generate_answer(text, chat_history=chat_history)
+        chat_history.append(("assistant", answer))
+
+        print(f"Answer: {answer}")
 
 
 if __name__ == "__main__":
